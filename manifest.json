@@ -1,0 +1,7 @@
+{
+  "name": "Get IP",
+  "version": "1.0.0",
+  "description": "Usage: [prefix]ip",
+  "author": "vorak",
+  "license": "MIT"
+}
