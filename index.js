@@ -8,7 +8,7 @@ module.exports = class GetIP extends Plugin {
         aliases: [],
         description: 'Returns your public IP.',
         usage: '{c} [--send]',
-        executor: async (args) => ({send: args.includes('--send'), result: "Public IP: " + await this.ip()})
+        executor: async (args) => ({send: args.includes('--send'), result: `${args.includes('--send') ? "IP: " : "Public IP: "}` + await this.ip()})
     })
   }
 
